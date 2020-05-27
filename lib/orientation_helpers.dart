@@ -14,7 +14,7 @@ RouteSettings rotationSettings(RouteSettings settings, ScreenOrientation rotatio
   return RouteSettings(name: settings.name, arguments: rotation);
 }
 
-// NavigationObserver which tracks the orientation
+// NavigatorObserver which tracks the orientation
 class NavigatorObserverWithOrientation extends NavigatorObserver {
   @override
   void didPop(Route route, Route previousRoute) {
